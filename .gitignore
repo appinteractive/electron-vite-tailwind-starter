@@ -4,3 +4,4 @@ dist
 build
 *.local
 .env
+yarn-error.log
