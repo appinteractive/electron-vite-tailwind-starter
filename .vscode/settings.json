@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": true,
+  "search.exclude": {
+    "**/build": true,
+    "**/dist": true
+  }
+}

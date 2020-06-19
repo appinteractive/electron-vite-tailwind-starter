@@ -1,0 +1,45 @@
+{
+  "name": "electron-vite-tailwindcss-starter",
+  "version": "0.0.1",
+  "author": "Grzegorz Leoniec",
+  "license": "MIT",
+  "scripts": {
+    "dev": "run-p dev:*",
+    "dev:vite": "vite",
+    "dev:electron": "electron src/background.js",
+    "build": "run-s build:*",
+    "build:vite": "vite build --base=./",
+    "build:electron": "electron-builder build",
+    "postinstall": "install-app-deps"
+  },
+  "dependencies": {
+    "electron-context-menu": "^2.0.1",
+    "electron-window-state": "^5.0.3",
+    "lodash-es": "^4.17.15",
+    "tailwindcss": "^1.4.6",
+    "vue": "^3.0.0-beta.14"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.0-beta.14",
+    "electron": "^9.0.4",
+    "electron-builder": "^22.7.0",
+    "npm-run-all": "^4.1.5",
+    "vite": "^0.20.0"
+  },
+  "main": "src/background.js",
+  "build": {
+    "directories": {
+      "output": "build"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "files": [
+      "src/background.js",
+      "src/helpers",
+      "dist",
+      "tailwind.config.js",
+      "package.json"
+    ]
+  }
+}
