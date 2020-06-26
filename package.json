@@ -1,6 +1,6 @@
 {
-  "name": "electron-vite-tailwindcss-starter",
-  "version": "0.0.1",
+  "name": "electron-vite-tailwind-starter",
+  "version": "0.5.0",
   "author": "Grzegorz Leoniec",
   "license": "MIT",
   "scripts": {
@@ -26,6 +26,12 @@
     "npm-run-all": "^4.1.5",
     "vite": "^0.20.0"
   },
+  "keywords": [
+    "electron",
+    "vue",
+    "vite",
+    "tailwind"
+  ],
   "main": "src/background.js",
   "build": {
     "directories": {
