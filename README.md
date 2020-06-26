@@ -1,4 +1,4 @@
-# Electron + Vite + Tailwindcss Starter
+# Electron + Vite + Tailwindcss - Starter
 
 ![Electron + Vite + Tailwindcss Starter](screenshot.png)
 
