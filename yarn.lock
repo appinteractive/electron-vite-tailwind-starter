@@ -2629,6 +2629,11 @@ object-assign@^4.0.1, object-assign@^4.1.1:
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
   integrity sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
 
+object-hash@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/object-hash/-/object-hash-2.0.3.tgz#d12db044e03cd2ca3d77c0570d87225b02e1e6ea"
+  integrity sha512-JPKn0GMu+Fa3zt3Bmr66JhokJU5BaNBIh4ZeTlaCBzrBsOeXzwcKKAK1tbLiPKgvwmPXsDvvLHoWh5Bm7ofIYg==
+
 object-inspect@^1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/object-inspect/-/object-inspect-1.7.0.tgz#f4f6bd181ad77f006b5ece60bd0b6f398ff74a67"
@@ -3669,10 +3674,10 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-tailwindcss@^1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.6.1.tgz#0fbd031848066665fe82dc89eeb30c3d9c4f83ba"
-  integrity sha512-hg20uPJTi3q4Ib6YSMb5p9ZEpp73O/5p3SxWFud45ePXAVl3/DyGMHhjTFDMVX5YqmLrPcEggxBw3Vx9TLuxyA==
+tailwindcss@^1.7.3:
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.7.3.tgz#4aa53a482c8060e12a4a477caad562a4af0bfb16"
+  integrity sha512-e6o/qhn80hcJ+cB1jIK3C1xlDPkFHU98c2m4ONMfeIOf8jvKQ+bowD39QKsWN+JMOvfATtMjgScpjSaqO1hffQ==
   dependencies:
     "@fullhuman/postcss-purgecss" "^2.1.2"
     autoprefixer "^9.4.5"
@@ -3685,11 +3690,13 @@ tailwindcss@^1.6.1:
     lodash "^4.17.15"
     node-emoji "^1.8.1"
     normalize.css "^8.0.1"
+    object-hash "^2.0.3"
     postcss "^7.0.11"
     postcss-functions "^3.0.0"
     postcss-js "^2.0.0"
     postcss-nested "^4.1.1"
     postcss-selector-parser "^6.0.0"
+    postcss-value-parser "^4.1.0"
     pretty-hrtime "^1.0.3"
     reduce-css-calc "^2.1.6"
     resolve "^1.14.2"
