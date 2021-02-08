@@ -2,7 +2,8 @@ const path = require('path')
 const srcPath = path.resolve(__dirname, 'src')
 
 module.exports = {
-  open: false, // do not open the broser as we use electron
+  open: false, // do not open the browser as we use electron
+  port: process.env.PORT || 3333,
   alias: {
     // setup aliases for cleaner imports
     '/~/': srcPath,

@@ -20,6 +20,16 @@ const isDev = !app.isPackaged
 
 let mainWindow
 
+function loadVitePage(port) {
+  mainWindow.loadURL(`http://localhost:${port}`).catch((err) => {
+    console.log('VITE NOT READY, WILL TRY AGAIN IN 200ms', err.message)
+    setTimeout(() => {
+      // do it again as the vite build can take a bit longer the first time
+      loadVitePage(port)
+    }, 200)
+  })
+}
+
 function createMainWindow() {
   mainWindow = createWindow('main', {
     backgroundColor: fullTailwindConfig.theme.colors.primary[800],
@@ -28,11 +38,9 @@ function createMainWindow() {
     mainWindow = null
   })
 
-  const port = process.env.PORT || 3000
+  const port = process.env.PORT || 3333
   if (isDev) {
-    mainWindow.loadURL(`http://localhost:${port}`)
-    // do it again as the vite build can take a bit longer the first time
-    setTimeout(() => mainWindow.loadURL(`http://localhost:${port}`), 1000)
+    loadVitePage(port)
   } else {
     mainWindow.loadFile('dist/index.html')
   }
