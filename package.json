@@ -16,7 +16,7 @@
     "electron-context-menu": "^2.4.0",
     "electron-window-state": "^5.0.3",
     "lodash-es": "^4.17.20",
-    "tailwindcss": "^1.9.6",
+    "tailwindcss": "^2.0.3",
     "vue": "^3.0.1"
   },
   "devDependencies": {
@@ -34,6 +34,9 @@
     "tailwind"
   ],
   "main": "src/background.js",
+  "resolutions": {
+    "postcss": "^8.2.1"
+  },
   "build": {
     "directories": {
       "output": "build"
