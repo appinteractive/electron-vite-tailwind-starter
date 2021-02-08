@@ -1,4 +1,4 @@
-# Electron + Vite + Tailwind - Starter
+# Electron 11 + Vite 2 + Tailwind 2 - Starter
 
 ![Electron + Vite + Tailwind Starter](screenshot.png)
 
