@@ -22,7 +22,7 @@ let mainWindow
 
 function loadVitePage(port) {
   mainWindow.loadURL(`http://localhost:${port}`).catch((err) => {
-    console.log('VITE NOT READY, WILL TRY AGAIN IN 200ms', err.message)
+    console.log('VITE NOT READY, WILL TRY AGAIN IN 200ms')
     setTimeout(() => {
       // do it again as the vite build can take a bit longer the first time
       loadVitePage(port)
