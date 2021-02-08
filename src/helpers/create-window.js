@@ -15,6 +15,7 @@ module.exports = function createWindow(windowName = 'main', options = {}) {
     },
     ...options,
     webPreferences: {
+      contextIsolation: true,
       devTools: !isProd,
       spellcheck: false,
       nodeIntegration: true,
