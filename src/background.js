@@ -6,6 +6,10 @@ const resolveConfig = require('tailwindcss/resolveConfig')
 const tailwindConfig = require('../tailwind.config.js')
 const fullTailwindConfig = resolveConfig(tailwindConfig)
 
+try {
+  require('electron-reloader')(module)
+} catch {}
+
 contextMenu({
   showSearchWithGoogle: false,
   showCopyImage: false,
