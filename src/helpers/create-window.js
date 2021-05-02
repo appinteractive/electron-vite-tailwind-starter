@@ -39,10 +39,11 @@ module.exports = function createWindow(windowName = 'main', options = {}) {
   })
   windowState.manage(win)
 
-  win.once('ready-to-show', () => {
-    win.show()
-    win.focus()
-  })
+  // disabled as we now do it explicitly white hiding the splash screen
+  // win.once('ready-to-show', () => {
+  //   win.show()
+  //   win.focus()
+  // })
 
   return win
 }
