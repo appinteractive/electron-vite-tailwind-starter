@@ -3134,16 +3134,6 @@ version-range@^1.0.0:
   dependencies:
     version-compare "^1.0.0"
 
-vite-plugin-components@^0.8.4:
-  version "0.8.4"
-  resolved "https://registry.yarnpkg.com/vite-plugin-components/-/vite-plugin-components-0.8.4.tgz#158a4d69c8106c36944a2e284df3ad0169ae1017"
-  integrity sha512-h6/FNBKBXc4TIcHxnFYxa4+aBGDZusqp/6Ra3LBvwolwFuX6k8qPsBbXkBP0I+UwOkyHw9iU2xJ4rdYBGyN+0Q==
-  dependencies:
-    chokidar "^3.5.1"
-    debug "^4.3.2"
-    fast-glob "^3.2.5"
-    minimatch "^3.0.4"
-
 vite@^2.2.3:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/vite/-/vite-2.2.3.tgz#1acbdfa56ac00e00e7ccb6988f63f130c2f99dbb"

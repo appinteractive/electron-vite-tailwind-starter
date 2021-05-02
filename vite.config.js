@@ -1,4 +1,3 @@
-import ViteComponents from 'vite-plugin-components'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
 
@@ -18,7 +17,7 @@ module.exports = {
       },
     ],
   },
-  plugins: [vue(), ViteComponents()],
+  plugins: [vue()],
   optimizeDeps: {
     // exclude path and electron-window-state as we are using the node runtime inside the browser
     // and don't wont vite to complain. If you have any issues importing node packages and vite complains,
