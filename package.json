@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "run-p dev:*",
     "dev:vite": "vite",
-    "dev:electron": "electron src/background.js",
+    "dev:electron": "electron src/background.ts",
     "build": "run-s build:*",
     "build:vite": "vite build --base=./",
     "build:electron": "electron-builder build",
@@ -34,7 +34,7 @@
     "vite",
     "tailwind"
   ],
-  "main": "src/background.js",
+  "main": "src/background.ts",
   "resolutions": {
     "postcss": "^8.2.1"
   },
@@ -46,7 +46,7 @@
       "target": "dmg"
     },
     "files": [
-      "src/background.js",
+      "src/background.ts",
       "src/helpers",
       "src/splashscreen.html",
       "dist",

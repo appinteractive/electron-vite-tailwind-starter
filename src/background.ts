@@ -8,7 +8,7 @@ const fullTailwindConfig = resolveConfig(tailwindConfig)
 
 try {
   require('electron-reloader')(module)
-} catch {}
+} catch { }
 
 contextMenu({
   showSearchWithGoogle: false,
