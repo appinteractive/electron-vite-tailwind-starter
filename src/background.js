@@ -37,10 +37,18 @@ function loadVitePage(port) {
 function createMainWindow() {
   mainWindow = createWindow('main', {
     backgroundColor: fullTailwindConfig.theme.colors.primary[800],
+    show: false,
   })
   mainWindow.once('close', () => {
     mainWindow = null
   })
+
+  // create a new `splash`-Window
+  const splash = createWindow('splash', {
+    backgroundColor: fullTailwindConfig.theme.colors.primary[800],
+    show: true,
+  })
+  splash.loadURL(`file://${__dirname}/../splashscreen.html`)
 
   const port = process.env.PORT || 3333
   if (isDev) {
@@ -48,6 +56,14 @@ function createMainWindow() {
   } else {
     mainWindow.loadFile('dist/index.html')
   }
+
+  // if main window is ready to show, then destroy the splash window and show up the main window
+  mainWindow.once('ready-to-show', () => {
+    console.log('READY')
+    splash.destroy()
+    mainWindow.show()
+    mainWindow.focus()
+  })
 }
 
 app.once('ready', createMainWindow)

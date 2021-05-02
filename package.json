@@ -48,6 +48,7 @@
     "files": [
       "src/background.js",
       "src/helpers",
+      "src/splashscreen.html",
       "dist",
       "tailwind.config.js",
       "package.json"
