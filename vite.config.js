@@ -7,9 +7,11 @@ module.exports = {
     open: false, // do not open the browser as we use electron
     port: process.env.PORT || 3333,
   },
-  alias: {
-    // setup aliases for cleaner imports
-    '/~': srcPath,
+  resolve: {
+    alias: {
+      // setup aliases for cleaner imports
+      '/~': srcPath,
+    },
   },
   plugins: [vue()],
   optimizeDeps: {

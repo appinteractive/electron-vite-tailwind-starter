@@ -1,12 +1,6 @@
 module.exports = {
-  purge: false,
-  purge: {
-    content: ['./index.html', './src/**/*.js', './src/**/*.vue'],
-    options: {
-      whitelistPatterns: [/.*transition.*/],
-      whitelistPatternsChildren: [/.*transition.*/],
-    },
-  },
+  mode: 'jit',
+  purge: ['./*.html', './src/**/*.{js,jsx,ts,tsx,vue}'],
   theme: {
     fontFamily: {
       // caption uses the systemfont so it looks more native
