@@ -1,6 +1,6 @@
 module.exports = {
   mode: 'jit',
-  purge: ['./*.html', './**/*.{js,jsx,ts,tsx,vue}'],
+  purge: ['./**/*.html', './**/*.{js,jsx,ts,tsx,vue}'],
   theme: {
     fontFamily: {
       // caption uses the systemfont so it looks more native

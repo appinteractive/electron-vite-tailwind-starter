@@ -3,7 +3,7 @@ const { app } = require('electron')
 const contextMenu = require('electron-context-menu')
 
 const resolveConfig = require('tailwindcss/resolveConfig')
-const tailwindConfig = require('../tailwind.config.js')
+const tailwindConfig = require('../../tailwind.config')
 const fullTailwindConfig = resolveConfig(tailwindConfig)
 
 try {
@@ -48,7 +48,7 @@ function createMainWindow() {
     backgroundColor: fullTailwindConfig.theme.colors.primary[800],
     show: true,
   })
-  splash.loadURL(`file://${__dirname}/../splashscreen.html`)
+  splash.loadURL(`file://${__dirname}/../../splashscreen.html`)
 
   const port = process.env.PORT || 3333
   if (isDev) {

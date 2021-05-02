@@ -1,6 +1,6 @@
 <template>
   <div class="h-screen w-screen flex flex-col pt-12">
-    <TopBar />
+    <atoms-top-bar />
     <!-- [ HERE COMES YOUR CONTENT ] -->
     <transition name="fade" appear>
       <div class="flex flex-col items-center justify-center h-full pb-0">
@@ -11,12 +11,10 @@
 </template>
 
 <script>
-import TopBar from '/~/components/layout/TopBar.vue'
+import AtomsTopBar from './components/atoms/TopBar.vue'
 
 export default {
+  components: { AtomsTopBar },
   name: 'App',
-  components: {
-    TopBar,
-  },
 }
 </script>

@@ -2,7 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@import 'css/transitions.css';
+@import '~/assets/css/transitions.css';
 
 body {
   /* used for behaving more like an app, selection inside inputs and textareas still work in chromium */
