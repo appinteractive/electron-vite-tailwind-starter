@@ -13,7 +13,7 @@
     "postinstall": "install-app-deps"
   },
   "dependencies": {
-    "electron-context-menu": "^2.5.2",
+    "electron-context-menu": "^3.0.0",
     "electron-ipc-proxy": "^2.1.0",
     "electron-window-state": "^5.0.3",
     "lodash-es": "^4.17.21",
@@ -29,7 +29,7 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^8.2.13",
     "tailwindcss": "^2.1.2",
-    "vite": "^2.2.3"
+    "vite": "^2.2.4"
   },
   "peerDependencies": {
     "postcss": "^8.2.13"

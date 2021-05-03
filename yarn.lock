@@ -1040,19 +1040,19 @@ electron-builder@^22.10.5:
     update-notifier "^5.1.0"
     yargs "^16.2.0"
 
-electron-context-menu@^2.5.2:
-  version "2.5.2"
-  resolved "https://registry.yarnpkg.com/electron-context-menu/-/electron-context-menu-2.5.2.tgz#7f2383f011d0d53f282300e0d80b44e2f64c16a7"
-  integrity sha512-1cEQR6fA9ktFsRBc+eXPwvrOgAPytUD7rUV4iBAA5zTrLAPKokJ23xeMjcK2fjrDPrlFRBxcLz0KP+GUhMrSCQ==
+electron-context-menu@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/electron-context-menu/-/electron-context-menu-3.0.0.tgz#cdf6824cf22711609ea6c267dc3717fa24976bac"
+  integrity sha512-dF0INSIIpcwofaKAXtdSKkQl08s9j0SMF+Nsi6jGBam6kfx97cIOmJLUHYlBW56DQo05umts2pRIfbcDPHNh9g==
   dependencies:
     cli-truncate "^2.1.0"
-    electron-dl "^3.1.0"
-    electron-is-dev "^1.2.0"
+    electron-dl "^3.2.1"
+    electron-is-dev "^2.0.0"
 
-electron-dl@^3.1.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/electron-dl/-/electron-dl-3.2.0.tgz#7fc5ebc683d05d3393591a994f8b825686137651"
-  integrity sha512-Wz6YZi0fwy/hmdkrtrBwj7W4JlrFd1tY5jvNdLHd0PUTlJFJ6pGi9mPQGtZRdjodkXYpaiD1uio+wh01hqrZNg==
+electron-dl@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/electron-dl/-/electron-dl-3.2.1.tgz#244a1316c663691f70e8aa4515cd1a401b4b5690"
+  integrity sha512-k5DFjocJlXbrjshO1zeWe/Gz7HkGwCgnehHPemiyzN2B/LfLlnbIX7sCj5F+huTwZ2l+nQehTI4IR37xvCn6FQ==
   dependencies:
     ext-name "^5.0.0"
     pupa "^2.0.1"
@@ -1071,6 +1071,11 @@ electron-is-dev@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/electron-is-dev/-/electron-is-dev-1.2.0.tgz#2e5cea0a1b3ccf1c86f577cee77363ef55deb05e"
   integrity sha512-R1oD5gMBPS7PVU8gJwH6CtT0e6VSoD0+SzSnYpNm+dBkcijgA+K7VAMHDfnRq/lkKPZArpzplTW6jfiMYosdzw==
+
+electron-is-dev@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/electron-is-dev/-/electron-is-dev-2.0.0.tgz#833487a069b8dad21425c67a19847d9064ab19bd"
+  integrity sha512-3X99K852Yoqu9AcW50qz3ibYBWY79/pBhlMCab8ToEWS48R0T9tyxRiQhwylE7zQdXrMnx2JKqUJyMPmt5FBqA==
 
 electron-publish@22.10.5:
   version "22.10.5"
@@ -3134,10 +3139,10 @@ version-range@^1.0.0:
   dependencies:
     version-compare "^1.0.0"
 
-vite@^2.2.3:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-2.2.3.tgz#1acbdfa56ac00e00e7ccb6988f63f130c2f99dbb"
-  integrity sha512-PtjyBL4GtACM+uT5q5hi2+AlMBbb6YI2b2bam6QI8ZdZt4FezseF0yZHQx0G+b3po9jIJ/GS5N9gc5Yq9Rue7g==
+vite@^2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-2.2.4.tgz#8f9cc85aacab04c850085894b086c8717f12ed16"
+  integrity sha512-vnIwSNci+phFMp6krhy+FbYzKL0R67Sdt9mVZ96S27AewrApSJjTqncJcalk8sf60BgcbW4+1C6DFIWkxquO9g==
   dependencies:
     esbuild "^0.9.3"
     postcss "^8.2.1"
