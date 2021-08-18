@@ -14,6 +14,8 @@ Also does it use [Tailwinds JIT Mode](https://tailwindcss.com/docs/just-in-time-
 
 `yarn dev`
 
+> Be careful, do not run `yarn dev:electron` or `yarn dev:vite` solo as they need each other! (see [#83](https://github.com/appinteractive/electron-vite-tailwind-starter/issues/91#issuecomment-896743263))
+
 ## Build
 
 `yarn build`
