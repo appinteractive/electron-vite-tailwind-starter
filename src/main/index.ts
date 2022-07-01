@@ -54,7 +54,7 @@ function createMainWindow() {
   if (isDev) {
     loadVitePage(port)
   } else {
-    mainWindow.loadFile('dist/index.html')
+    mainWindow.loadFile(`${__dirname}/../renderer/dist/index.html`)
   }
 
   // if main window is ready to show, then destroy the splash window and show up the main window
