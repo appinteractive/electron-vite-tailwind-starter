@@ -17,7 +17,7 @@
     "electron-ipc-proxy": "^2.1.0",
     "electron-window-state": "^5.0.3",
     "lodash-es": "^4.17.21",
-    "tailwindcss": "^2.1.2",
+    "tailwindcss": "^3.1.7",
     "vue": "^3.0.11"
   },
   "devDependencies": {
